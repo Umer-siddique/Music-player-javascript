@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <div class="header_div">
+        <div class="center_div">
+            <h2 id="title">Mere Nabi</h2>
+            <h3 id="singer">Maher zain</h3>
+            <div class="img_container">
+                <img src="images/image-1.jpg" alt="">
+            </div>
+            <audio src="naat/naat-1.mp3" ></audio>
+
+            <!-- ==== Progress Bar div ==== -->
+            <div class="progress_container" id="progress_bar">
+                <div class="progress_duration_meter">
+                    <div class="current_time">0:00</div>
+                    <div class="duration">5:43</div>
+                </div>
+                <div class="progress_div" id="progress_div">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+
+            <!-- Audio controls using javaScript -->
+            <div class="music_controls">
+                <i class="fas fa-backward" id="prev" title="previous"></i>
+                <i class="fas fa-play play_button" id="play" title="Play"></i>
+                <i class="fas fa-forward" id="next" title="Next"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
